@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/architecture/base/basic_mixin.dart';
-import 'package:tilmaame/data/api_end_point.dart';
-import 'package:tilmaame/data/api_service.dart';
-import 'package:tilmaame/data/local_storage.dart';
-import 'package:tilmaame/model/booking/booking_response.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/screen/dashboard/dashboard_page.dart';
+import 'package:carrental/architecture/base/basic_mixin.dart';
+import 'package:carrental/data/api_end_point.dart';
+import 'package:carrental/data/api_service.dart';
+import 'package:carrental/data/local_storage.dart';
+import 'package:carrental/model/booking/booking_response.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/screen/dashboard/dashboard_page.dart';
 
 class PaymentPage extends StatefulWidget {
   @override

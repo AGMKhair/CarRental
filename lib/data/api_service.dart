@@ -1,13 +1,13 @@
 import 'package:http/http.dart' as http;
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 30/1/24
  */
 class APIService {
   static var client = http.Client();
-  static var BaseURL = 'https://apps.piit.us/new/tilmaame/api/v1/';
+  static var BaseURL = 'https://apps.piit.us/new/carrental/api/v1/';
 
   static Future<String?> fetchData(String url, {String bearerToken = ''}) async {
     var response = await client.get(Uri.parse(BaseURL + url), headers: <String, String>{

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 9/3/24
  */

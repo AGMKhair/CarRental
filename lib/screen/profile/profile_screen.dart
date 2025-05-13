@@ -1,18 +1,18 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/architecture/base/basic_mixin.dart';
-import 'package:tilmaame/data/api_end_point.dart';
-import 'package:tilmaame/data/api_service.dart';
-import 'package:tilmaame/data/local_storage.dart';
-import 'package:tilmaame/model/login/authorisation_model.dart';
-import 'package:tilmaame/model/login/login_response.dart';
-import 'package:tilmaame/model/login/user_model.dart';
-import 'package:tilmaame/model/user/user_details_response.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
-import 'package:tilmaame/resourse/widget/wrapper.dart';
-import 'package:tilmaame/screen/login/login_screen.dart';
-import 'package:tilmaame/screen/main_screen.dart';
+import 'package:carrental/architecture/base/basic_mixin.dart';
+import 'package:carrental/data/api_end_point.dart';
+import 'package:carrental/data/api_service.dart';
+import 'package:carrental/data/local_storage.dart';
+import 'package:carrental/model/login/authorisation_model.dart';
+import 'package:carrental/model/login/login_response.dart';
+import 'package:carrental/model/login/user_model.dart';
+import 'package:carrental/model/user/user_details_response.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
+import 'package:carrental/resourse/widget/wrapper.dart';
+import 'package:carrental/screen/login/login_screen.dart';
+import 'package:carrental/screen/main_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});

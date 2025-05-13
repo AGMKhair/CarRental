@@ -1,26 +1,26 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/architecture/base/basic_mixin.dart';
-import 'package:tilmaame/data/api_end_point.dart';
-import 'package:tilmaame/data/api_service.dart';
-import 'package:tilmaame/data/local_storage.dart';
-import 'package:tilmaame/model/cars/cars_response.dart';
-import 'package:tilmaame/model/login/login_response.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/util/dialog_util.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
-import 'package:tilmaame/resourse/widget/button_outlined_widget.dart';
-import 'package:tilmaame/resourse/widget/password_field_widget.dart';
-import 'package:tilmaame/resourse/widget/secondary_button_widget.dart';
-import 'package:tilmaame/resourse/widget/space_widget.dart';
-import 'package:tilmaame/resourse/widget/text_field_outlined_widget.dart';
-import 'package:tilmaame/resourse/widget/wrapper.dart';
-import 'package:tilmaame/screen/booking_page.dart';
-import 'package:tilmaame/screen/dashboard/dashboard_page.dart';
-import 'package:tilmaame/screen/home.dart';
-import 'package:tilmaame/screen/registration/registration_screen.dart';
+import 'package:carrental/architecture/base/basic_mixin.dart';
+import 'package:carrental/data/api_end_point.dart';
+import 'package:carrental/data/api_service.dart';
+import 'package:carrental/data/local_storage.dart';
+import 'package:carrental/model/cars/cars_response.dart';
+import 'package:carrental/model/login/login_response.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/util/dialog_util.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
+import 'package:carrental/resourse/widget/button_outlined_widget.dart';
+import 'package:carrental/resourse/widget/password_field_widget.dart';
+import 'package:carrental/resourse/widget/secondary_button_widget.dart';
+import 'package:carrental/resourse/widget/space_widget.dart';
+import 'package:carrental/resourse/widget/text_field_outlined_widget.dart';
+import 'package:carrental/resourse/widget/wrapper.dart';
+import 'package:carrental/screen/booking_page.dart';
+import 'package:carrental/screen/dashboard/dashboard_page.dart';
+import 'package:carrental/screen/home.dart';
+import 'package:carrental/screen/registration/registration_screen.dart';
 /**
- *  PROJECT_NAME:-  tilmaame
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 21/2/25
  */

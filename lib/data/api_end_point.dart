@@ -1,6 +1,6 @@
 class ApiEndPoint
 {
-  static const String BASE_URL = "https://apps.piit.us/new/tilmaame/";
+  static const String BASE_URL = "https://apps.piit.us/new/carrental/";
   static const String POST_LOGIN = "login";
   static const String POST_REGISTRATION = "register";
   static const String GET_USER_INFO = "get-user-info";

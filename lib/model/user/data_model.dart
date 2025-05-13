@@ -1,4 +1,4 @@
-import 'package:tilmaame/model/login/user_model.dart';
+import 'package:carrental/model/login/user_model.dart';
 
 class Data {
   Data({

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/style/size_manager.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/style/size_manager.dart';
 
 class DoubleItemDoubleLine extends StatelessWidget {
   final String labelOne;

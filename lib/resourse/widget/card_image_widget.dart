@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/style/size_manager.dart';
-import 'package:tilmaame/resourse/widget/online_image_widget.dart';
+import 'package:carrental/resourse/style/size_manager.dart';
+import 'package:carrental/resourse/widget/online_image_widget.dart';
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 7/3/24
  */

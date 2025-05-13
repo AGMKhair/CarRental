@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
 
 class LoginPage extends StatefulWidget {
   @override

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/architecture/base/basic_mixin.dart';
-import 'package:tilmaame/model/blog_info.dart';
-import 'package:tilmaame/resourse/widget/category_pill_widget.dart';
-import 'package:tilmaame/resourse/widget/online_image_widget.dart';
+import 'package:carrental/architecture/base/basic_mixin.dart';
+import 'package:carrental/model/blog_info.dart';
+import 'package:carrental/resourse/widget/category_pill_widget.dart';
+import 'package:carrental/resourse/widget/online_image_widget.dart';
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 6/3/24
  */

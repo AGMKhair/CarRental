@@ -2,9 +2,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
-import 'package:tilmaame/resourse/widget/primary_button_widget.dart';
-import 'package:tilmaame/screen/test_screen.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
+import 'package:carrental/resourse/widget/primary_button_widget.dart';
+import 'package:carrental/screen/test_screen.dart';
 
 */
 /**

@@ -1,4 +1,4 @@
-package com.peoplentech.agmkhair.tilmaame
+package com.agmkhair.carrental
 
 import io.flutter.embedding.android.FlutterActivity
 

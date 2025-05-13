@@ -1,10 +1,10 @@
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:tilmaame/model/login/authorisation_model.dart';
-import 'package:tilmaame/model/login/login_response.dart';
-import 'package:tilmaame/model/login/user_model.dart';
+import 'package:carrental/model/login/authorisation_model.dart';
+import 'package:carrental/model/login/login_response.dart';
+import 'package:carrental/model/login/user_model.dart';
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 30/1/24
  */
