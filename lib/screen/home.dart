@@ -1,8 +1,6 @@
 import 'dart:convert';
 
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:carrental/architecture/base/basic_mixin.dart';
 import 'package:carrental/data/api_end_point.dart';
 import 'package:carrental/data/api_service.dart';
@@ -12,6 +10,8 @@ import 'package:carrental/resourse/image/image_handler.dart';
 import 'package:carrental/resourse/style/color_manager.dart';
 import 'package:carrental/resourse/widget/wrapper.dart';
 import 'package:carrental/screen/car_details.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -20,10 +20,11 @@ class Home extends StatefulWidget {
   State<Home> createState() => _HomeState();
 }
 
-class _HomeState extends State<Home>  with BasicMixin{
-  // late List<Data> data;
-  late CategoriesResponse categoriesResponse = CategoriesResponse(success: false, data: [], message: "");
-  late CarsResponse carsDetails = CarsResponse(success: false, data: [], message: "");
+class _HomeState extends State<Home> with BasicMixin {
+  late CategoriesResponse categoriesResponse =
+      CategoriesResponse(success: false, data: [], message: "");
+  late CarsResponse carsDetails =
+      CarsResponse(success: false, data: [], message: "");
   late List<CarsData> filterResponse = [];
 
   bool select = false;
@@ -66,17 +67,19 @@ class _HomeState extends State<Home>  with BasicMixin{
   }
 
   void fetchData() async {
-    setState(() =>isLoading = true);
-    String? categoryResponse = await APIService.fetchData(ApiEndPoint.GET_CATEGORIES);
+    setState(() => isLoading = true);
+    String? categoryResponse =
+        await APIService.fetchData(ApiEndPoint.GET_CATEGORIES);
     print(categoryResponse);
 
-    categoriesResponse = CategoriesResponse.fromJson(json.decode(categoryResponse!));
+    categoriesResponse =
+        CategoriesResponse.fromJson(json.decode(categoryResponse!));
 
     String? carsResponse = await APIService.fetchData(ApiEndPoint.GET_CARS);
     print(carsResponse);
     carsDetails = CarsResponse.fromJson(json.decode(carsResponse!));
     filterResponse = carsDetails.data;
-    setState(() =>isLoading = false);
+    setState(() => isLoading = false);
   }
 
   @override
@@ -86,22 +89,21 @@ class _HomeState extends State<Home>  with BasicMixin{
         // shadowColor: Colors.brown,
         title: Image.asset(
           ImageHandler.LOGO,
-          width: MediaQuery.sizeOf(context).width/3,
+          width: MediaQuery.sizeOf(context).width / 3,
           height: 100,
         ),
 
         flexibleSpace: Container(
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [ColorManager.greenDeep, ColorManager.brown], // 👈 Use your custom colors
+              colors: [ColorManager.greenDeep, ColorManager.brown],
+              // 👈 Use your custom colors
               stops: [0, 1],
               begin: AlignmentDirectional(1, 1),
               end: AlignmentDirectional(-1, -1),
             ),
           ),
         ),
-
-
       ),
       body: Wrapper(
         isLoading: isLoading,
@@ -114,7 +116,6 @@ class _HomeState extends State<Home>  with BasicMixin{
                   onTap: () {
                     filter("All");
                     filterCategory(-1, "All");
-
                   },
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -126,15 +127,24 @@ class _HomeState extends State<Home>  with BasicMixin{
                         width: 70,
                         height: 60,
                         decoration: BoxDecoration(
-                          shape:  BoxShape.circle,
+                          shape: BoxShape.circle,
                           gradient: LinearGradient(
-                            colors: [selectedIndex == -1 ?   CupertinoColors.systemOrange : Colors.yellow,  selectedIndex == -1 ?   CupertinoColors.systemYellow : Colors.brown], // Gradient colors
+                            colors: [
+                              selectedIndex == -1
+                                  ? CupertinoColors.systemOrange
+                                  : Colors.yellow,
+                              selectedIndex == -1
+                                  ? CupertinoColors.systemYellow
+                                  : Colors.brown
+                            ], // Gradient colors
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight,
                           ),
                           boxShadow: [
                             BoxShadow(
-                              color: selectedIndex == -1 ?  CupertinoColors.systemOrange : Colors.black12,
+                              color: selectedIndex == -1
+                                  ? CupertinoColors.systemOrange
+                                  : Colors.black12,
                               blurRadius: 5,
                               spreadRadius: 1,
                               offset: Offset(0, 0),
@@ -145,10 +155,12 @@ class _HomeState extends State<Home>  with BasicMixin{
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-
                             Text(
                               "All",
-                              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500,color: Colors.white),
+                              style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.white),
                             ),
                           ],
                         ),
@@ -169,7 +181,8 @@ class _HomeState extends State<Home>  with BasicMixin{
 
                         return InkWell(
                           onTap: () {
-                            filterCategory(index, categoriesResponse.data[index].name);
+                            filterCategory(
+                                index, categoriesResponse.data[index].name);
                           },
                           child: Padding(
                             padding: const EdgeInsets.symmetric(horizontal: 8),
@@ -182,13 +195,22 @@ class _HomeState extends State<Home>  with BasicMixin{
                                 decoration: BoxDecoration(
                                   shape: BoxShape.circle,
                                   gradient: LinearGradient(
-                                    colors: [isSelected ?   CupertinoColors.systemOrange : Colors.yellow,  isSelected ?   CupertinoColors.systemYellow : Colors.brown], // Gradient colors
+                                    colors: [
+                                      isSelected
+                                          ? CupertinoColors.systemOrange
+                                          : Colors.yellow,
+                                      isSelected
+                                          ? CupertinoColors.systemYellow
+                                          : Colors.brown
+                                    ], // Gradient colors
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
                                   ),
                                   boxShadow: [
                                     BoxShadow(
-                                      color: isSelected ?  CupertinoColors.systemOrange : Colors.black12,
+                                      color: isSelected
+                                          ? CupertinoColors.systemOrange
+                                          : Colors.black12,
                                       blurRadius: 5,
                                       spreadRadius: 1,
                                       offset: Offset(0, 0),
@@ -201,16 +223,22 @@ class _HomeState extends State<Home>  with BasicMixin{
                                   children: [
                                     ClipOval(
                                       child: CachedNetworkImage(
-                                        imageUrl: ApiEndPoint.BASE_URL + categoriesResponse.data[index].icon,
+                                        imageUrl: ApiEndPoint.BASE_URL +
+                                            categoriesResponse.data[index].icon,
                                         width: 40,
                                         fit: BoxFit.cover,
-                                        placeholder: (context, url) => CircularProgressIndicator(),
-                                        errorWidget: (context, url, error) => Icon(Icons.error, size: 40),
+                                        placeholder: (context, url) =>
+                                            CircularProgressIndicator(),
+                                        errorWidget: (context, url, error) =>
+                                            Icon(Icons.error, size: 40),
                                       ),
                                     ),
                                     Text(
                                       categoriesResponse.data[index].name,
-                                      style: TextStyle(fontSize: 10, fontWeight: FontWeight.w500,color: Colors.white),
+                                      style: TextStyle(
+                                          fontSize: 10,
+                                          fontWeight: FontWeight.w500,
+                                          color: Colors.white),
                                     ),
                                   ],
                                 ),
@@ -226,7 +254,7 @@ class _HomeState extends State<Home>  with BasicMixin{
             ),
 
             SizedBox(
-              height: MediaQuery.sizeOf(context).height/1.7,
+              height: MediaQuery.sizeOf(context).height / 1.7,
               child: SingleChildScrollView(
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
@@ -236,8 +264,11 @@ class _HomeState extends State<Home>  with BasicMixin{
                     physics: NeverScrollableScrollPhysics(),
                     itemCount: filterResponse.length,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2, // Two columns
-                      crossAxisSpacing: 16, mainAxisSpacing: 16, childAspectRatio: 1.2,
+                      crossAxisCount: 2,
+                      // Two columns
+                      crossAxisSpacing: 16,
+                      mainAxisSpacing: 16,
+                      childAspectRatio: 1.2,
                     ),
                     itemBuilder: (context, index) {
                       final car = filterResponse[index];
@@ -255,8 +286,11 @@ class _HomeState extends State<Home>  with BasicMixin{
                                 width: double.infinity,
                                 height: double.infinity,
                                 fit: BoxFit.cover,
-                                placeholder: (context, url) => CircularProgressIndicator(),
-                                errorWidget: (context, url, error) => Image.asset(ImageHandler.IMAGE_PLACE_HOLDER_CAE),
+                                placeholder: (context, url) =>
+                                    CircularProgressIndicator(),
+                                errorWidget: (context, url, error) =>
+                                    Image.asset(
+                                        ImageHandler.IMAGE_PLACE_HOLDER_CAE),
                               ),
                             ),
 
@@ -266,31 +300,37 @@ class _HomeState extends State<Home>  with BasicMixin{
                               child: Container(
                                 decoration: BoxDecoration(
                                   gradient: LinearGradient(
-                                    colors: [Colors.brown, Colors.blueGrey], // Gradient colors
+                                    colors: [Colors.brown, Colors.blueGrey],
+                                    // Gradient colors
                                     begin: Alignment.topLeft,
                                     end: Alignment.bottomRight,
                                   ),
-                                  borderRadius: BorderRadius.circular(20), // Rounded corners
+                                  borderRadius: BorderRadius.circular(
+                                      20), // Rounded corners
                                 ),
                                 child: ElevatedButton(
-
                                   style: ElevatedButton.styleFrom(
                                     backgroundColor: Colors.transparent,
                                     shadowColor: Colors.transparent,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(20),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                                    padding: EdgeInsets.symmetric(
+                                        horizontal: 24, vertical: 12),
                                   ),
                                   onPressed: () {
                                     Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                        builder: (context) => CarDetailsPage(car: car),
+                                        builder: (context) =>
+                                            CarDetailsPage(car: car),
                                       ),
                                     );
                                   },
-                                  child: Text("Details",style: TextStyle(color: Colors.white),),
+                                  child: Text(
+                                    "Details",
+                                    style: TextStyle(color: Colors.white),
+                                  ),
                                 ),
                               ),
                             ),
