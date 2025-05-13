@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:launch_review/launch_review.dart';
-import 'package:tilmaame/resourse/style/size_manager.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
-import 'package:tilmaame/resourse/widget/space_widget.dart';
+import 'package:carrental/resourse/style/size_manager.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
+import 'package:carrental/resourse/widget/space_widget.dart';
 
 class CustomAlertDialog {
   CustomAlertDialog({

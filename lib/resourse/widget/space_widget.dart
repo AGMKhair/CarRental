@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/style/size_manager.dart';
+import 'package:carrental/resourse/style/size_manager.dart';
 
 class Space extends StatelessWidget {
   final double? times;

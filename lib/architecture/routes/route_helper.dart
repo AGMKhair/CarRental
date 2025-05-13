@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/model/cars/cars_response.dart';
+import 'package:carrental/model/cars/cars_response.dart';
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 18/2/24
  */

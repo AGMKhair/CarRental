@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/style/size_manager.dart';
-import 'package:tilmaame/resourse/widget/space_widget.dart';
+import 'package:carrental/resourse/style/size_manager.dart';
+import 'package:carrental/resourse/widget/space_widget.dart';
 
 class PrimaryButton extends StatelessWidget {
   final String label;

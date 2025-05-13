@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/widget/space_widget.dart';
+import 'package:carrental/resourse/widget/space_widget.dart';
 
 class DoubleItemSingleLine extends StatelessWidget {
   final bool firstVisible;

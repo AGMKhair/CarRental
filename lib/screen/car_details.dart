@@ -2,14 +2,14 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
-import 'package:tilmaame/architecture/base/basic_mixin.dart';
-import 'package:tilmaame/data/api_end_point.dart';
-import 'package:tilmaame/data/local_storage.dart';
-import 'package:tilmaame/model/cars/cars_response.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
-import 'package:tilmaame/screen/booking_page.dart';
-import 'package:tilmaame/screen/login/login_screen.dart';
+import 'package:carrental/architecture/base/basic_mixin.dart';
+import 'package:carrental/data/api_end_point.dart';
+import 'package:carrental/data/local_storage.dart';
+import 'package:carrental/model/cars/cars_response.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
+import 'package:carrental/screen/booking_page.dart';
+import 'package:carrental/screen/login/login_screen.dart';
 
 class CarDetailsPage extends StatelessWidget with BasicMixin {
   // final CarsResponse car;

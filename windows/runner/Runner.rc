@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.peoplentech.agmkhair" "\0"
-            VALUE "FileDescription", "tilmaame" "\0"
+            VALUE "FileDescription", "carrental" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "tilmaame" "\0"
+            VALUE "InternalName", "carrental" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.peoplentech.agmkhair. All rights reserved." "\0"
-            VALUE "OriginalFilename", "tilmaame.exe" "\0"
-            VALUE "ProductName", "tilmaame" "\0"
+            VALUE "OriginalFilename", "carrental.exe" "\0"
+            VALUE "ProductName", "carrental" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

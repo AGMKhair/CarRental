@@ -1,5 +1,5 @@
-import 'package:tilmaame/model/login/authorisation_model.dart';
-import 'package:tilmaame/model/login/user_model.dart';
+import 'package:carrental/model/login/authorisation_model.dart';
+import 'package:carrental/model/login/user_model.dart';
 
 class LoginResponse {
   LoginResponse({

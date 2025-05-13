@@ -3,15 +3,15 @@ import 'dart:convert';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/architecture/base/basic_mixin.dart';
-import 'package:tilmaame/data/api_end_point.dart';
-import 'package:tilmaame/data/api_service.dart';
-import 'package:tilmaame/model/cars/cars_response.dart';
-import 'package:tilmaame/model/category/categories_response.dart';
-import 'package:tilmaame/resourse/image/image_handler.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/widget/wrapper.dart';
-import 'package:tilmaame/screen/car_details.dart';
+import 'package:carrental/architecture/base/basic_mixin.dart';
+import 'package:carrental/data/api_end_point.dart';
+import 'package:carrental/data/api_service.dart';
+import 'package:carrental/model/cars/cars_response.dart';
+import 'package:carrental/model/category/categories_response.dart';
+import 'package:carrental/resourse/image/image_handler.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/widget/wrapper.dart';
+import 'package:carrental/screen/car_details.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -86,8 +86,8 @@ class _HomeState extends State<Home>  with BasicMixin{
         // shadowColor: Colors.brown,
         title: Image.asset(
           ImageHandler.LOGO,
-          width: MediaQuery.sizeOf(context).width / 2,
-          color: Colors.white,
+          width: MediaQuery.sizeOf(context).width/3,
+          height: 100,
         ),
 
         flexibleSpace: Container(

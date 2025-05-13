@@ -1,6 +1,6 @@
 {
-    "name": "tilmaame",
-    "short_name": "tilmaame",
+    "name": "carrental",
+    "short_name": "carrental",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

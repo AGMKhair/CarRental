@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:tilmaame/architecture/routes/route_helper.dart';
-import 'package:tilmaame/architecture/routes/routes.dart';
-import 'package:tilmaame/screen/home.dart';
-import 'package:tilmaame/screen/login.dart';
-import 'package:tilmaame/screen/main_screen.dart';
-import 'package:tilmaame/screen/registration/registration_screen.dart';
+import 'package:carrental/architecture/routes/route_helper.dart';
+import 'package:carrental/architecture/routes/routes.dart';
+import 'package:carrental/screen/home.dart';
+import 'package:carrental/screen/login.dart';
+import 'package:carrental/screen/main_screen.dart';
+import 'package:carrental/screen/registration/registration_screen.dart';
 
 class RoutesAction {
   static Route<dynamic> generateRoute(RouteSettings settings) {

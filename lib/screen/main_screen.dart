@@ -3,17 +3,17 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-import 'package:tilmaame/data/local_storage.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/resourse/util/string_dictionary.dart';
-import 'package:tilmaame/screen/dashboard/dashboard_page.dart';
-import 'package:tilmaame/screen/home.dart';
-import 'package:tilmaame/screen/login/login_screen.dart';
-import 'package:tilmaame/screen/profile/profile_screen.dart';
-import 'package:tilmaame/screen/registration/registration_screen.dart';
+import 'package:carrental/data/local_storage.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/resourse/util/string_dictionary.dart';
+import 'package:carrental/screen/dashboard/dashboard_page.dart';
+import 'package:carrental/screen/home.dart';
+import 'package:carrental/screen/login/login_screen.dart';
+import 'package:carrental/screen/profile/profile_screen.dart';
+import 'package:carrental/screen/registration/registration_screen.dart';
 
 /**
- *  PROJECT_NAME:-  TILMAAME
+ *  PROJECT_NAME:-  carrental
  *  Project Created by AGM Khair Sabbir
  *  DATE:- 21/2/24
  */

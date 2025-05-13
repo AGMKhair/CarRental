@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:tilmaame/resourse/image/image_handler.dart';
-import 'package:tilmaame/resourse/util/business_dictionary.dart';
+import 'package:carrental/resourse/image/image_handler.dart';
+import 'package:carrental/resourse/util/business_dictionary.dart';
 
 class OnlineImage extends StatelessWidget {
   final String url;

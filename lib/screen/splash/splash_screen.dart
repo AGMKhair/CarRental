@@ -2,9 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:tilmaame/architecture/routes/routes.dart';
-import 'package:tilmaame/resourse/style/color_manager.dart';
-import 'package:tilmaame/screen/main_screen.dart';
+import 'package:carrental/architecture/routes/routes.dart';
+import 'package:carrental/resourse/style/color_manager.dart';
+import 'package:carrental/screen/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
