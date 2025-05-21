@@ -57,6 +57,8 @@ dependencies:
   google_fonts: ^4.0.4
 #  flutter_html: ^2.2.1
   flutter_widget_from_html: ^0.9.1
+  firebase_core: ^2.25.4
+  cloud_firestore: ^4.14.0
 #  flutter_layout_grid: ^1.0.1
 #  timelines: ^0.1.0
 #  flutter_widget_from_html: ^0.16.0

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "244502529289",
+    "firebase_url": "https://androidproject-e723d.firebaseio.com",
+    "project_id": "androidproject-e723d",
+    "storage_bucket": "androidproject-e723d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244502529289:android:078908c22cc97932ca3fd8",
+        "android_client_info": {
+          "package_name": "com.agmkhair.carrental"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiG1AveClLJAMUMn_UJNf433z1oKiIafY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244502529289:android:403f9a5405fa8462",
+        "android_client_info": {
+          "package_name": "com.dailymarketlist.securesoftbd.androidproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiG1AveClLJAMUMn_UJNf433z1oKiIafY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:244502529289:android:e7e4c2a51671eb0fca3fd8",
+        "android_client_info": {
+          "package_name": "com.example.covidtracking"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiG1AveClLJAMUMn_UJNf433z1oKiIafY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
